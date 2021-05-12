@@ -1,6 +1,25 @@
 <div class="row">
-    <div class="col-8">
-        
+    <div class="col-xs-12 col-md-10">
+        <!-- <h3>{{category | titlecase}}</h3> -->
+        <div class="row m-2 mt-4">
+            <div *ngFor="let product of products" class="card col-12 col-xs-12 col-sm-12 col-md-3 d-flex flex-row custom-card">
+                <div class="item-container w-50">                       
+                    <a routerLink="/"><img src="/assets/images/{{product.imagePath}}" class="w-75 home-images mt-4"></a>                       
+                </div>
+                <div class="card-body item-details-container w-50">  
+                    <h5 class="m-0 mb-2">{{product.name}}</h5>                     
+                    <p class="m-0">
+                        <select class="qty form-select">
+                            <option value="" *ngFor="let qty of product.availableQty">{{qty}}</option>
+                        </select>
+                    </p>
+                    <p class="m-0 mb-1"><span class="price">{{product.currency}} {{product.price[0]}}</span></p>
+                    <div class="cart-button-set text-right">
+                        <button type="button" class="btn btn-danger w-50">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>       
     </div>
-    <div class="col-4"></div>
+    <div class="col-xs-12 col-md-2"></div>
 </div>
