@@ -8,7 +8,7 @@ import { CategoryService } from '../categories/category.service';
   styleUrls: ['./menubar.component.css']
 })
 export class MenubarComponent implements OnInit {
-
+  isShow: Boolean = false;
   categories: Category[] = [];
   constructor(private categoryService: CategoryService) { }
 
@@ -17,6 +17,12 @@ export class MenubarComponent implements OnInit {
       console.log(categories)
       this.categories = categories;
     })
+  }
+
+  showMenu() {
+    
+    this.isShow = !this.isShow;
+    console.log(this.isShow)
   }
 
 }
