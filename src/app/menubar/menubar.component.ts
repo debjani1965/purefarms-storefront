@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Category } from '../categories/category';
 import { CategoryService } from '../categories/category.service';
+import { SharedService } from '../shared/shared.service';
 
 @Component({
   selector: 'app-menubar',
@@ -10,7 +11,8 @@ import { CategoryService } from '../categories/category.service';
 export class MenubarComponent implements OnInit {
   isShow: Boolean = false;
   categories: Category[] = [];
-  constructor(private categoryService: CategoryService) { }
+  @Output() hideSideMenu = new EventEmitter();
+  constructor(private categoryService: CategoryService, private sharedService: SharedService) { }
 
   ngOnInit(): void {
     this.categoryService.getCategories().subscribe((categories) => {
@@ -19,10 +21,12 @@ export class MenubarComponent implements OnInit {
     })
   }
 
-  showMenu() {
-    
-    this.isShow = !this.isShow;
-    console.log(this.isShow)
+  showMenu(sidenav: HTMLElement) {  
+    this.sharedService.showMenu(sidenav);
   }
-
+  
+  hideMenu(sidenav: HTMLElement) {
+    this.sharedService.hideMenu(sidenav);
+    this.hideSideMenu.emit(sidenav);
+  }
 }

@@ -1,8 +1,11 @@
-<div class="dropdown  menu-header">
-    <a class="btn btn-secondary dropdown-toggle" (click)="showMenu()" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Purefarms Menu
-    </a>
-    <div class="dropdown-menu menu-list" [ngClass]="{'show-menu-list': isShow}" aria-labelledby="dropdownMenuButton">
-      <a *ngFor="let category of categories" class="dropdown-item" routerLink="/products/{{category.categoryId}}" routerLinkActive="active">{{category.name}}</a>
-    </div>
+<a href="javascript:void(0);" class="icon menu-icon" (click)="showMenu(sidenav)">
+  <i class="fa fa-bars"></i>
+</a>
+
+<div class="menu-list" #sidenav aria-labelledby="dropdownMenuButton">
+  <div class="menu-header" href="javascript:void(0)">
+    <span>Shop by category</span>
+    <a href="javascript:void(0)" class="closebtn" (click)="hideMenu(sidenav)">&times;</a>
   </div>
+  <a *ngFor="let category of categories" class="dropdown-item" (click)="hideMenu(sidenav)" routerLink="/products/{{category.categoryId}}" routerLinkActive="active">{{category.name}}</a>
+</div>

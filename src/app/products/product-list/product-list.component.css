@@ -1,26 +1,31 @@
-.dashboard-section {
-    padding: 30px;
-    padding-left:60px;
+.product-item-container {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: 1px solid #ece7e7;
 }
 
-.dashboard-section h3 {
-    width: 100%;
-    font-size: 18px;
-    box-shadow: 0 8px 6px -6px black;
-    border-bottom: 2px solid #857f7f;
-    font-weight: 700;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.product-item {
+    border-bottom: 1px solid #ece7e7;
 }
 
-.custom-card {
-    margin-bottom:10px;
+.item-container {
+    max-width:35%;
+    margin: 20px 20px 20px 0;
+    box-shadow: 1px 1px #888888;
 }
 
-.custom-card img {
+.item-container > .card {
+    margin: 10px 0 0 0;
+    border-color: green;
+}
+
+.item-image {
     width:100%;
 }
 
+.item-details-container {
+    width:60%;
+    margin:20px 0;
+}
 .item-details-container h5 {
     text-align: left;
     font-weight: 500;
@@ -33,30 +38,22 @@
     color:grey;
     padding-right: 5px;
 }
-.m-0 {
-    margin: 0;
-}
-
-.mb-5 {
-    margin-bottom: 5px;
-}
 .qty {
     color: #474747;
     font-size: 12px;
-    width: 100%;
+    width: 70%;
     padding: 5px;
-}
-.w-73 {
-    width:73%!important;
 }
 .price {
     color: red;
-    font-weight:500;
+    font-weight:700;
     font-size: 14px;
 }
 .cart-button-set {
     text-align: right;
 }
-.card {
-    border-color: green;
+.cart-button-set button {
+    width:50%;
+    padding: 5px;
+    font-size:14px;
 }

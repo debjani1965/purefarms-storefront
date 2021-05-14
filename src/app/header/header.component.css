@@ -9,3 +9,37 @@
 .logo img {
     width:100%;
 }
+
+.cart-icon {
+    color:#fff;
+    font-size: 24px;
+    float:right;
+}
+#lblCartCount {
+    font-size: 14px;
+    background: #ff0000;
+    color: #fff;
+    padding: 1px 5px;
+    vertical-align: top;
+    margin-left: -10px;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+
+.header-center-text {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: .8rem;
+    color: white;
+    font-size: 18px;
+}

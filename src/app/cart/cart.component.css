@@ -1,0 +1,22 @@
+.cart-nocontent {
+    border-bottom: 1px solid #bebebe;
+}
+.cart-nocontent div {
+    text-align: center;
+}
+
+.cart-nocontent div img {
+    width:10rem;
+}
+
+.no-cart-msg {
+    color: #474747;
+    font-size:16px;
+    font-weight:600;
+}
+
+.cart-continue a {
+    text-decoration: none;
+    color: green;
+    font-size:16px;
+}
