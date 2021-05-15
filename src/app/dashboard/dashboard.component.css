@@ -25,6 +25,7 @@
 .veg-busket-price-img {
     width:5rem;
     height:6rem;
+    float:left;
 }
 .veg-busket-week-img {
     width:12.3rem;
@@ -52,7 +53,7 @@
 }
 
 .category-card-body {
-    font-size:12px;
+    font-size:10px;
 }
 .item-image {
     width:6rem;
