@@ -36,6 +36,7 @@
     height:6rem;
 }
 .category-section {
+    background-color: #ffc107;
     border: 1px solid green;
     margin:0;
 }
@@ -46,8 +47,8 @@
     min-width: 6rem;
     height: 6rem;
     margin: 0 auto;
-    border-color: green;
-    background-color: #ffc107;
+    border: 2px solid green;
+    background-color: #58a833;
     color: red;
     font-weight: 600;
 }
