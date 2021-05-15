@@ -36,10 +36,18 @@
   background-color: #c67605;
 }
 
-.header-center-text {
+.header-center{
     text-align: center;
     vertical-align: middle;
     padding-top: .8rem;
-    color: white;
     font-size: 18px;
+}
+.header-center a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-logo {
+    width:2rem;
+    padding-right:.5rem;
 }

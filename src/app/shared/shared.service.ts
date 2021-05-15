@@ -1,10 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
   sideNav:HTMLElement;
+  titleUpdated = new EventEmitter<string>();
+  hideSideMenu = new EventEmitter();
   constructor() { }
 
   showMenu(sidenav: HTMLElement) {  
@@ -12,6 +14,7 @@ export class SharedService {
   }
   
   hideMenu(sidenav) {
+    console.log(sidenav)
     sidenav.className = "menu-list";
   }
 }

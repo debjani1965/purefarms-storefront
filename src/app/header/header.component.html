@@ -2,11 +2,14 @@
     <div class="col-2 xs-col-2 sm-col-2 pt-2">
         <app-menubar></app-menubar>
     </div>
-    <div class="col-8 col-xs-8 col-sm-8 header-center-text">
-        <span>Purefarms</span>
+    <div class="col-8 col-xs-8 col-sm-8 header-center">
+        <a routerLink="/">
+            <img src="/assets/images/purefarms-logo-header.jpg" class="header-logo"/>
+            <span>{{headerTitle}}</span>
+        </a>        
     </div>
     <div class="col-2 xs-col-2 sm-col-2 pt-2">
-        <a class="icon cart-icon" routerLink="/cart" (click)="hideSideMenu()">
+        <a class="icon cart-icon" routerLink="/cart">
             <i class="fa fa-shopping-cart"></i>
             <span class='badge badge-warning' id='lblCartCount'>{{cartCount}}</span>
         </a>

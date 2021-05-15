@@ -23,7 +23,7 @@
 .menu-list > a {
     color: #474747;
     border: 0;
-    border-bottom: solid 1px #8b8b8b;
+    border-bottom: solid 1px #e1d9d9;
     padding:.9rem;
     font-size:14px;
 }
@@ -39,10 +39,9 @@
 
 .menu-list .closebtn {
     position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 32px;
-    margin-left: 50px;
+    top: .5rem;
+    right: 1rem;
+    font-size: 1.5rem ;
     color: white;
     text-decoration: none;
 }
@@ -59,40 +58,6 @@
 .dropdown-item.active, .dropdown-item:active {
     background-color: #fff;
 }
-
-/* .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-  
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-} */
 
 /* @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}

@@ -1,0 +1,17 @@
+.custom-nav {
+    flex-direction: row;
+}
+
+.custom-nav li {
+    width: 3.5rem;
+    text-align:center;
+}
+
+.custom-nav li a {
+    color: #474747;
+    font-size:16px;
+}
+
+.custom-nav li a i{
+    font-size:24px;
+}

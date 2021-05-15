@@ -11,7 +11,7 @@ import { SharedService } from '../shared/shared.service';
 export class MenubarComponent implements OnInit {
   isShow: Boolean = false;
   categories: Category[] = [];
-  @Output() hideSideMenu = new EventEmitter();
+  
   constructor(private categoryService: CategoryService, private sharedService: SharedService) { }
 
   ngOnInit(): void {
@@ -25,8 +25,14 @@ export class MenubarComponent implements OnInit {
     this.sharedService.showMenu(sidenav);
   }
   
-  hideMenu(sidenav: HTMLElement) {
+  hideMenu(sidenav: HTMLElement, categoryName: string) {
     this.sharedService.hideMenu(sidenav);
-    this.hideSideMenu.emit(sidenav);
+    if(categoryName != '') {
+      this.onSelectMenuItem(categoryName);
+    }    
+  }
+
+  onSelectMenuItem(categoryName ) {
+    this.sharedService.titleUpdated.emit(categoryName);
   }
 }

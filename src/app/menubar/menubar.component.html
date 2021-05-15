@@ -5,7 +5,9 @@
 <div class="menu-list" #sidenav aria-labelledby="dropdownMenuButton">
   <div class="menu-header" href="javascript:void(0)">
     <span>Shop by category</span>
-    <a href="javascript:void(0)" class="closebtn" (click)="hideMenu(sidenav)">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" (click)="hideMenu(sidenav, '')">&times;</a>
   </div>
-  <a *ngFor="let category of categories" class="dropdown-item" (click)="hideMenu(sidenav)" routerLink="/products/{{category.categoryId}}" routerLinkActive="active">{{category.name}}</a>
+  <a *ngFor="let category of categories" class="dropdown-item" (click)="hideMenu(sidenav, category.name)" routerLink="/products/{{category.categoryId}}" routerLinkActive="active">
+    <i class="fa fa-hand-o-right" aria-hidden="true" style="color:red;margin-right: 5px;"></i>{{category.name}}
+  </a>
 </div>

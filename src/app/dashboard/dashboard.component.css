@@ -1,7 +1,60 @@
 .dashboard-section {
     margin:0;
     padding:0;
+    height: 84vh;
+    border-bottom: 1px solid #bebebe;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-.dashboard-section img {
+
+.dashboard-section > h6 {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: #ffc107;
+    color: red;
+    font-weight: 600;
+    font-size: 18px;
+}
+.dashboard-items1 {
+    border-color:green;
+}
+.veg-busket-img {
+    width:6rem;
+    height:6rem;
+}
+.veg-busket-price-img {
+    width:5rem;
+    height:6rem;
+}
+.veg-busket-week-img {
+    width:12.3rem;
+    height:6rem;
+}
+.dashboard-items1-img {
     width:100%;
+    height:6rem;
+}
+.category-section {
+    border: 1px solid green;
+    margin:0;
+}
+.category-section > div {
+    margin:10px 0;
+}
+.category-container {
+    min-width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    border-color: green;
+    background-color: #ffc107;
+    color: red;
+    font-weight: 600;
+}
+
+.category-card-body {
+    font-size:12px;
+}
+.item-image {
+    width:6rem;
+    height:4.5rem;
 }
