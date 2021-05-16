@@ -1,8 +1,7 @@
 .dashboard-section {
     margin:0;
     padding:0;
-    height: 82vh;
-    border-bottom: 1px solid #bebebe;
+    height: 84vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -10,34 +9,36 @@
 .dashboard-section > h6 {
     padding: .5rem 1rem;
     margin-bottom: 0;
-    background-color: #ffc107;
+    background-color: #ffff9d;
     color: red;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 .dashboard-items1 {
     border-color:green;
+    background-color: #93c572;
 }
 .veg-busket-img {
     width:6rem;
     height:6rem;
+    border-radius: 3rem;
 }
 .veg-busket-price-img {
-    width:5rem;
+    width:5.5rem;
     height:6rem;
-    float:left;
+    border-radius: 3rem;
 }
 .veg-busket-week-img {
-    width:12.3rem;
+    width:11.7rem;
     height:6rem;
 }
 .dashboard-items1-img {
-    width:100%;
     height:6rem;
+    width:100%;
 }
 .category-section {
-    background-color: #ffc107;
-    border: 1px solid green;
+    background-color: #def5a3;
+    border: 2px solid green;
     margin:0;
 }
 .category-section > div {
@@ -45,18 +46,32 @@
 }
 .category-container {
     min-width: 6rem;
-    height: 6rem;
+    height: 6.5rem;
     margin: 0 auto;
     border: 2px solid green;
     background-color: #58a833;
-    color: red;
+    color: #fff;
     font-weight: 600;
 }
 
 .category-card-body {
-    font-size:10px;
+    font-size:11px;
+}
+.category-card-body p{
+    margin-top:.5rem;
 }
 .item-image {
     width:6rem;
     height:4.5rem;
+}
+.carousel-inner {
+    border: 2px solid red;
+    border-radius:.5rem;
+    background-image: url(/assets/images/mala_backcover.jpg);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: center;
+}
+.carousel-item{
+    text-align: center;
 }

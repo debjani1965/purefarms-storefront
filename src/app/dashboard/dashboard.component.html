@@ -1,32 +1,73 @@
 <div class="row">
      <div class="col-12 col-xs-12 col-sm-12 col-md-12 dashboard-section">
-        <h6><span class="mr-4">Weekly Offers</span>&nbsp;&nbsp;<i class="fa fa-thumbs-down" aria-hidden="true"></i></h6>
+        <h6><span class="mr-4">Weekly Offers</span>&nbsp;&nbsp;<i class="fa fa-hand-o-down" aria-hidden="true"></i></h6>
         <div class="row">
             <div class="col-12 col-xs-12 col-sm-12 col-md-12">
                 <div class="card dashboard-items1">  
-                    <div class="card-body dashboard-items1-body p-0">            
-                        <a routerLink="/products/mala_product">
-                            <img src="/assets/images/week-range-img.jpg" class="veg-busket-week-img">
-                            <img src="/assets/images/veg_busket.jpg" class="veg-busket-img">
+                    <div class="card-body dashboard-items1-body p-0 text-center">            
+                        <a routerLink="/products/daily_vegetables">
                             <img src="/assets/images/dashboard-weekly-price.jpg" class="veg-busket-price-img">
-                            
+                            <img src="/assets/images/week-range-img.jpg" class="veg-busket-week-img">
+                            <img src="/assets/images/veg_busket.jpg" class="veg-busket-img">                           
                         </a>  
                     </div>
                 </div>
             </div>
         </div>
-        <h6><span class="mr-4">Special Offers</span>&nbsp;&nbsp;<i class="fa fa-thumbs-down" aria-hidden="true"></i></h6>
+        
+        <h6><span class="mr-4">Special Offers On MALA's Products</span>&nbsp;&nbsp;<i class="fa fa-hand-o-down" aria-hidden="true"></i></h6>
+        <div class="row">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12">               
+                <div id="malaProductCarousel" class="carousel slide" data-ride="carousel">
+                    <a routerLink="/products/mala_product">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block w-25" src="/assets/images/mala_banner1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-25" src="/assets/images/mala_banner2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-25" src="/assets/images/mala_banner3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-25" src="/assets/images/mala_banner3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-25" src="/assets/images/mala_banner4.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-25" src="/assets/images/mala_banner5.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    </a>
+                    <!-- <a class="carousel-control-prev" href="#malaProductCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#malaProductCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a> -->
+                </div>           
+            </div>
+        </div>
+
+        <h6><span class="mr-4">Special Offers</span>&nbsp;&nbsp;<i class="fa fa-hand-o-down" aria-hidden="true"></i></h6>
         <div class="row">
             <div class="col-12 col-xs-12 col-sm-12 col-md-12">
                 <div class="card dashboard-items1">  
                     <div class="card-body dashboard-items1-body p-0">            
                         <a href="javascript:void(0)">
                             <img src="/assets/images/dashboard-items1.jpg" class="dashboard-items1-img">
+                            <!-- <img src="/assets/images/seasonal_vegetables.jpg" class="dashboard-items1-img"> -->
                         </a>  
                     </div>
                 </div>
             </div>
         </div>
+        
+        <h6><span class="mr-4">Shop From Category</span>&nbsp;&nbsp;<i class="fa fa-hand-o-down" aria-hidden="true"></i></h6>
         <div class="row category-section">
             <div class="col-12 col-xs-12 col-sm-12 col-md-12">
                 <div class="d-flex m-2">
@@ -70,19 +111,19 @@
                     </div>
                     <div class="card category-container">  
                         <div class="card-body category-card-body p-0">            
-                            <a routerLink="/products/pulses">
-                                <img src="/assets/images/pulses.jpg" class="item-image"></a>  
-                            <p class="text-center">Pulses</p>                      
+                            <a routerLink="/products/spices">
+                                <img src="/assets/images/spices.jpg" class="item-image"></a>  
+                            <p class="text-center">Spices</p>
                         </div>
                     </div>
                 </div> 
 
-                <div class="d-flex m-2">
+                <!-- <div class="d-flex m-2">
                     <div class="card category-container">  
                         <div class="card-body category-card-body p-0">            
-                            <a routerLink="/products/spices">
-                                <img src="/assets/images/spices.jpg" class="item-image"></a>  
-                            <p class="text-center">Spices</p>
+                            <a routerLink="/products/pulses">
+                                <img src="/assets/images/pulses.jpg" class="item-image"></a>  
+                            <p class="text-center">Pulses</p>                      
                         </div>
                     </div>
                     <div class="card category-container">  
@@ -99,7 +140,7 @@
                             <p class="text-center">Dry Fruits</p>                      
                         </div>
                     </div>
-                </div> 
+                </div>  -->
             </div>
         </div>
     </div>
