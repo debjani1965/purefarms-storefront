@@ -68,10 +68,18 @@
     border: 2px solid red;
     border-radius:.5rem;
     background-image: url(/assets/images/mala_backcover.jpg);
-    background-repeat: no-repeat;
     background-size: 10rem;
     background-position: center;
 }
 .carousel-item{
     text-align: center;
+}
+.week-range {
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.week-range div {
+    width: 54%;
 }
