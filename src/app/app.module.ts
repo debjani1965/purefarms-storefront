@@ -16,6 +16,7 @@ import { ProductListComponent } from './products/product-list/product-list.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CartComponent } from './cart/cart.component';
 import { WeeklyComboComponent } from './weekly-combo/weekly-combo.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { WeeklyComboComponent } from './weekly-combo/weekly-combo.component';
     ProductListComponent,
     DashboardComponent,
     CartComponent,
-    WeeklyComboComponent
+    WeeklyComboComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

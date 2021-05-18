@@ -1,0 +1,21 @@
+.contact-us-container {
+    height:84vh;
+    overflow-y: scroll;
+}
+.contact-us-section {
+    font-size:0.8rem
+}
+.contact-us-section h5 {
+    padding: 1rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+.mobile-div,
+.email-div {
+    padding: .5rem 1.5rem;
+}
+
+.mobile-span,
+.email-span {
+    padding-left:.5rem;
+}

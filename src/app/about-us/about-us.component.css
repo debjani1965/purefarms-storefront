@@ -1,0 +1,33 @@
+.about-us-container {
+    height:84vh;
+    overflow-y: scroll;
+}
+.about-us-section {
+    font-size:0.8rem
+}
+.about-us-section h5 {
+    padding: 1rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.about-us-section h5 > span,
+.about-us-section h6 > span {
+    border-bottom: 2px solid #474747;
+}
+
+.about-us-section img {
+    width: 10rem;
+}
+
+.about-us-left {
+    padding-left:2rem;
+}
+
+.about-us-right {
+    padding-right:2rem;
+}
+
+.about-us-last {
+    padding-bottom:2rem;
+}
