@@ -17,6 +17,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CartComponent } from './cart/cart.component';
 import { WeeklyComboComponent } from './weekly-combo/weekly-combo.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { MalasProductComponent } from './malas-product/malas-product.component';
+import { CategoryListComponent } from './categories/category-list/category-list.component';
+import { CategoryItemComponent } from './categories/category-item/category-item.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     DashboardComponent,
     CartComponent,
     WeeklyComboComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    MalasProductComponent,
+    CategoryListComponent,
+    CategoryItemComponent
   ],
   imports: [
     BrowserModule,

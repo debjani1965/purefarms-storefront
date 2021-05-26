@@ -1,6 +1,7 @@
 .about-us-container {
     height:84vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .about-us-section {
     font-size:0.8rem
@@ -30,4 +31,8 @@
 
 .about-us-last {
     padding-bottom:2rem;
+}
+
+p {
+    font-size:14px;
 }

@@ -1,5 +1,5 @@
-<div class="row mt-4 product-item-container p-3">
-    <div *ngFor="let product of products" class="col-12 col-xs-12 col-sm-12 col-md-8 d-flex flex-row product-item">
+<div class="row product-item-container p-3">
+    <div *ngFor="let product of products; let i = index" class="col-12 col-xs-12 col-sm-12 col-md-8 d-flex flex-row product-item">
         <div class="card item-container">  
             <div class="card-body">                  
                 <a routerLink="/"><img src="/assets/images/{{product.imagePath}}" class="item-image"></a>  
@@ -8,12 +8,13 @@
         </div>
         <div class="item-details-container">  
             <h5 class="m-0 mb-2">{{product.name}}</h5>                     
-            <select class="qty">
-                <option value="" *ngFor="let qty of product.availableQty">{{qty}}</option>
+            <select class="qty" (change)="selectQty($event, i)">
+                <option [value]="qtyIndex" *ngFor="let qty of product.availableQty; let qtyIndex = index">{{qty}}</option>
             </select>
-            <p class="m-0 mb-1"><span class="price">{{product.currency}} {{product.price[0]}}</span></p>
+            <p class="m-0 mb-1"><span class="price">{{product.currency}}</span><span>{{product.price[0]}}</span></p>
             <div class="cart-button-set text-right">
-                <button type="button" class="btn btn-danger">Add</button>
+                <button type="button" class="btn btn-danger">Add to List</button>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
             </div>
         </div>
     </div>

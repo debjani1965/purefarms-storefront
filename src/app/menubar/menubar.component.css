@@ -52,7 +52,7 @@
     text-decoration: none;
     width:15rem;
     padding: .9rem;
-    font-weight: 600;
+    font-size:14px;
 }
 
 .dropdown-item.active, .dropdown-item:active {

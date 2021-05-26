@@ -4,7 +4,7 @@
 
 <div class="menu-list" #sidenav aria-labelledby="dropdownMenuButton">
   <div class="menu-header" href="javascript:void(0)">
-    <span>Shop by category</span>
+    <span>SHOP BY CATEGORY</span>
     <a href="javascript:void(0)" class="closebtn" (click)="hideMenu(sidenav, '')">&times;</a>
   </div>
   <a *ngFor="let category of categories" class="dropdown-item" (click)="hideMenu(sidenav, category.name)" routerLink="/products/{{category.categoryId}}" routerLinkActive="active">

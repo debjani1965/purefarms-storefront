@@ -30,5 +30,14 @@ export class ProductListComponent implements OnInit {
         }
       );
   }
+  
+  selectQty(event, index) {
+    console.log(event.target.value, index)
+    let selectedQtyIndex = event.target.value;
+    let selectedProduct = this.products[index];
+    let selectedPrice = selectedProduct.price[selectedQtyIndex]
+    console.log(selectedPrice)
 
+
+  }
 }
