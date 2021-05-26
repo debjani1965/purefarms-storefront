@@ -1,0 +1,14 @@
+.weekly-combo-section {
+    height:75vh;
+    overflow-y: scroll;
+}
+.cart-button-set {
+    text-align: right;
+    padding-top: 0.8rem;
+}
+.cart-button-set button {
+    width: 30%;
+    padding: 5px;
+    font-size: 14px;
+    margin-right: .5rem;
+}
