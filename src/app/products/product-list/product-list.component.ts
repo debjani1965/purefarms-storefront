@@ -23,21 +23,68 @@ export class ProductListComponent implements OnInit {
           this.categoryId = params['categoryId'];
           this.category = this.categoryId.split('_').join(' ');
           this.productService.getProducts(this.categoryId).subscribe((res)=> {
-              this.products = res.products;
+              this.products = [...res.products];
+              this.products.forEach(product => {
+                if(product.unit != 'gm') {
+                  if(product.availableQty[0] == '500') {
+                    product.calculatedPrice = product.pricePerUnit
+                  } else {
+                    product.calculatedPrice = product.pricePerUnit * +(product.availableQty[0]);
+                  }                 
+                } else {
+                  product.calculatedPrice = product.pricePerUnit;
+                }
+              })
               this.maxProducts = res.maxProducts;
-              console.log(this.products)
           })
         }
       );
   }
   
   selectQty(event, index) {
-    console.log(event.target.value, index)
-    let selectedQtyIndex = event.target.value;
+    let selectedQty = +event.target.value;
     let selectedProduct = this.products[index];
-    let selectedPrice = selectedProduct.price[selectedQtyIndex]
-    console.log(selectedPrice)
-
-
+    let price = this.products[0].pricePerUnit;
+    console.log(selectedQty )
+    if(selectedProduct.unit == 'gm' && (selectedQty == 100 || selectedQty == 250 || selectedQty == 500 || selectedQty == 750)) {
+      if(selectedProduct.availableQty[0] == '100') {
+        switch(selectedQty) {
+         case 250 :
+            selectedProduct.calculatedPrice = selectedProduct.pricePerUnit * 2.5;
+            break;
+          case 500 :
+            selectedProduct.calculatedPrice = selectedProduct.pricePerUnit * 5;
+            break;
+          case 750 :
+            selectedProduct.calculatedPrice = selectedProduct.pricePerUnit * 7.5;
+            break;
+          default:
+            selectedProduct.calculatedPrice = selectedProduct.pricePerUnit;
+        }
+      } else {
+        switch(selectedQty) {
+          case 500 :
+             selectedProduct.calculatedPrice = selectedProduct.pricePerUnit *2;
+             break;
+           case 750 :
+             selectedProduct.calculatedPrice = selectedProduct.pricePerUnit * 3;
+             break;
+           default:
+             selectedProduct.calculatedPrice = selectedProduct.pricePerUnit;
+        }
+      }      
+    } else {
+      if(selectedProduct.availableQty[0] == '500') {
+        switch(selectedQty) {
+          case 500:
+            selectedProduct.calculatedPrice = selectedProduct.pricePerUnit;
+            break;
+          default:
+            selectedProduct.calculatedPrice = (selectedProduct.pricePerUnit * 2) * +selectedQty;
+        }        
+      } else {
+        selectedProduct.calculatedPrice = selectedProduct.pricePerUnit * +selectedQty;
+      }      
+    }    
   }
 }

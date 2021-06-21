@@ -1,11 +1,13 @@
 export interface Product {
     id: string;
     name: string;
+    description: string;
     categoryId: string;
     imagePath: string;
     availableQty: string[];
     unit: string;
-    price: number;
+    pricePerUnit: number;
+    calculatedPrice: number;
     currency: string;
     status: boolean;
 }

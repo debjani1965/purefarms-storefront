@@ -9,17 +9,17 @@
         <div class="item-details-container">  
             <h5 class="m-0 mb-2">{{product.name}}</h5>                     
             <select class="qty" (change)="selectQty($event, i)">
-                <option [value]="qtyIndex" *ngFor="let qty of product.availableQty; let qtyIndex = index">{{qty}}</option>
+                <option [value]="qty" *ngFor="let qty of product.availableQty; let qtyIndex = index">{{qty}} {{product.unit}}</option>
             </select>
-            <p class="m-0 mb-1"><span class="price">{{product.currency}}</span><span>{{product.price[0]}}</span></p>
+            <p class="m-0 mb-1"><span class="price">{{product.currency}}</span><span>{{product. calculatedPrice}}</span></p>
             <div class="cart-button-set text-right">
-                <button type="button" class="btn btn-danger">Add to List</button>
+                <!-- <button type="button" class="btn btn-danger">Add to List</button> -->
                 <button type="button" class="btn btn-danger">Add to Cart</button>
             </div>
         </div>
     </div>
     <div class="col-xs-12 col-md-2"></div>
-</div>   
+</div>
     
     
     

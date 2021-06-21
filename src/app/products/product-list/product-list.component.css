@@ -8,7 +8,7 @@
 }
 
 .product-item {
-    border-bottom: 1px solid #ece7e7;
+    border-bottom: 1px solid #b3b3b3;
     padding: 0.8rem;
 }
 
@@ -46,20 +46,23 @@
 .qty {
     color: #474747;
     font-size: 12px;
-    width: 70%;
+    width: 93%;
     padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .price {
     color: red;
     font-weight:700;
     font-size: 14px;
+    padding-right: 5px;
 }
 .cart-button-set {
     text-align: right;
     padding-top: 0.8rem;
 }
 .cart-button-set button {
-    width: 43%;
+    width: 40%;
     padding: 5px;
     font-size: 14px;
     margin-right: 1rem;
